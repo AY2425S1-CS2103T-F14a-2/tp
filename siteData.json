@@ -9,9 +9,8 @@
         "project-team": "Project team",
         "lim-kai-xuan": "Lim Kai Xuan",
         "foo-chao": "Foo Chao",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "yu-sutong": "Yu Sutong",
+        "ng-kheng-yang": "Ng Kheng Yang"
       },
       "headingKeywords": {}
     },
@@ -154,6 +153,14 @@
     {
       "src": "team/kaixuan.md",
       "title": "Kai Xuan's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/khengyang.md",
+      "title": "John Doe's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
