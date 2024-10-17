@@ -115,6 +115,7 @@
         "editing-a-person-edit": "Editing a person : edit",
         "locating-persons-by-name-find": "Locating persons by name: find",
         "deleting-a-person-delete": "Deleting a person : delete",
+        "adding-an-order-under-a-person-addorder": "Adding an order under a Person : addOrder",
         "listing-all-orders-under-a-person-listorder": "Listing all orders under a Person : listOrder",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
