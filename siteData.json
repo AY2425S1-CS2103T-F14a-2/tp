@@ -117,6 +117,7 @@
         "deleting-a-person-delete": "Deleting a person : delete",
         "adding-an-order-under-a-person-addorder": "Adding an order under a Person : addOrder",
         "listing-all-orders-under-a-person-listorder": "Listing all orders under a Person : listOrder",
+        "deleting-an-order-under-a-person-deleteorder": "Deleting an order under a Person : deleteOrder",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
