@@ -119,6 +119,7 @@
         "listing-all-orders-under-a-person-listorder": "Listing all orders under a Person : listOrder",
         "deleting-an-order-under-a-person-deleteorder": "Deleting an order under a Person : deleteOrder",
         "mark-an-order-as-completed-markorder": "Mark an order as completed : markOrder",
+        "reverts-an-order-to-pending-status-unmarkorder": "Reverts an order to pending status : unmarkOrder",
         "filter-orders-under-a-person-by-order-status-filterorder": "Filter orders under a Person by order status : filterOrder",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
