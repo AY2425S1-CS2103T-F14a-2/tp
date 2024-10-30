@@ -121,7 +121,7 @@
         "editing-an-order-editorder": "Editing an order : editOrder",
         "mark-an-order-as-completed-markorder": "Mark an order as completed : markOrder",
         "reverts-an-order-to-pending-status-unmarkorder": "Reverts an order to pending status : unmarkOrder",
-        "filter-orders-under-a-person-by-order-status-filterorder": "Filter orders under a Person by order status : filterOrder",
+        "filter-orders-by-order-status-filterorder": "Filter orders by order status : filterOrder",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
