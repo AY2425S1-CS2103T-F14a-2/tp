@@ -33,8 +33,7 @@ public class FindPersonCommand extends Command {
     public CommandResult execute(Model model) {
         requireNonNull(model);
         model.updateFilteredPersonList(predicate);
-        return new CommandResult(
-                String.format(Messages.MESSAGE_PERSONS_LISTED_OVERVIEW, model.getFilteredPersonList().size()));
+        return new CommandResult(generateSuccessMessage(model.getFilteredPersonList().size()));
     }
 
     @Override
@@ -57,5 +56,16 @@ public class FindPersonCommand extends Command {
         return new ToStringBuilder(this)
                 .add("predicate", predicate)
                 .toString();
+    }
+
+    /**
+     * Generates the response upon successful execution of the command.
+     */
+    private String generateSuccessMessage(int numberOfCustomers) {
+        if (numberOfCustomers == 1) {
+            return Messages.MESSAGE_PERSONS_LISTED_OVERVIEW_SINGULAR;
+        } else {
+            return String.format(Messages.MESSAGE_PERSONS_LISTED_OVERVIEW, numberOfCustomers);
+        }
     }
 }

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static seedu.sellsavvy.logic.Messages.MESSAGE_PERSONS_LISTED_OVERVIEW;
+import static seedu.sellsavvy.logic.Messages.MESSAGE_PERSONS_LISTED_OVERVIEW_SINGULAR;
 import static seedu.sellsavvy.logic.commands.personcommands.PersonCommandTestUtil.assertCommandSuccess;
 import static seedu.sellsavvy.testutil.TypicalPersons.CARL;
 import static seedu.sellsavvy.testutil.TypicalPersons.ELLE;
@@ -72,6 +73,16 @@ public class FindPersonCommandTest {
         expectedModel.updateFilteredPersonList(predicate);
         assertCommandSuccess(command, model, expectedMessage, expectedModel);
         assertEquals(Arrays.asList(CARL, ELLE, FIONA), model.getFilteredPersonList());
+    }
+
+    @Test
+    public void execute_oneKeyword_onePersonFound() {
+        String expectedMessage = MESSAGE_PERSONS_LISTED_OVERVIEW_SINGULAR;
+        NameContainsKeywordsPredicate predicate = preparePredicate("carl");
+        FindPersonCommand command = new FindPersonCommand(predicate);
+        expectedModel.updateFilteredPersonList(predicate);
+        assertCommandSuccess(command, model, expectedMessage, expectedModel);
+        assertEquals(Arrays.asList(CARL), model.getFilteredPersonList());
     }
 
     @Test
