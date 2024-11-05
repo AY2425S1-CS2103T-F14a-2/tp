@@ -27,6 +27,7 @@ public class FilterOrderCommand extends Command {
             + "Parameters: ORDER_STATUS (" + Status.MESSAGE_CONSTRAINTS + ")\n"
             + "Example: " + COMMAND_WORD + " Completed";
     public static final String MESSAGE_FILTER_ORDERS_SUCCESS = "%1$d %2$s orders listed!";
+    public static final String MESSAGE_FILTER_ORDERS_SUCCESS_SINGULAR = "1 %1$s order listed!";
 
     private final StatusEqualsKeywordPredicate predicate;
 
@@ -44,8 +45,7 @@ public class FilterOrderCommand extends Command {
         }
 
         selectedPerson.updateFilteredOrderList(predicate);
-        return new CommandResult(String.format(MESSAGE_FILTER_ORDERS_SUCCESS,
-                selectedPerson.getFilteredOrderList().size(), predicate.getValue()));
+        return new CommandResult(generateSuccessMessage(selectedPerson.getFilteredOrderList().size(), predicate));
     }
 
     @Override
@@ -68,5 +68,16 @@ public class FilterOrderCommand extends Command {
         return new ToStringBuilder(this)
                 .add("predicate", predicate)
                 .toString();
+    }
+
+    /**
+     * Generates the response upon successful execution of the command.
+     */
+    private String generateSuccessMessage(int numberOfOrders, StatusEqualsKeywordPredicate predicate) {
+        if (numberOfOrders == 1) {
+            return String.format(MESSAGE_FILTER_ORDERS_SUCCESS_SINGULAR, predicate.getValue());
+        } else {
+            return String.format(MESSAGE_FILTER_ORDERS_SUCCESS, numberOfOrders, predicate.getValue());
+        }
     }
 }
