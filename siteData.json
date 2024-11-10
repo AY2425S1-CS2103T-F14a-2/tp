@@ -61,7 +61,11 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-customer": "Deleting a customer",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "appendix-effort": "Appendix: Effort",
+        "creating-order-class-and-handling": "Creating Order class and handling",
+        "implementing-order-parameters-for-order-management": "Implementing Order parameters for order management",
+        "implementing-filterorder-command": "Implementing filterOrder command"
       },
       "headingKeywords": {}
     },
