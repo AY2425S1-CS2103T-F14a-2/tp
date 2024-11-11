@@ -461,7 +461,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("Initial launch")]),_v(" "),_c('o
 with(this){return _c('h3',{attrs:{"id":"adding-a-customer"}},[_v("Adding a customer"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#adding-a-customer","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Note:")]),_v(" Some of the test cases may depend on previous test cases, especially those on testing customers with duplicate/similar names. You are advised to follow the test cases in order. "),_c('br')])}
+with(this){return _c('p',[_c('strong',[_v("Note:")]),_v(" Some of the test cases may depend on previous test cases, especially those on testing customers with duplicate/similar names. You are advised to follow the test cases in order."),_c('br')])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Tips:")]),_v(" All the prerequisites below will be fulfilled if you start off with the default sample data and follow the test cases in sequence.")])}
@@ -587,6 +587,6 @@ with(this){return _c('ul',[_c('li',[_v("Creating predicate class to support filt
 with(this){return _c('ul',[_c('li',[_v("Interpreting expected filter of displayed list after commands such as "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("listOrder")]),_v(" and "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("addOrder")]),_v(".")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 15:30:19 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 15:30:41 GMT+8]")])])])}
 }];
   
